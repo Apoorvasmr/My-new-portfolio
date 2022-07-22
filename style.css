@@ -144,6 +144,9 @@ footer{
 .icons a {
   color: black;
 }
+.card-text-description{
+  width: 80%;
+}
 
 @media screen and (max-width: 1170px) {
   #about {
@@ -169,8 +172,16 @@ footer{
   margin-bottom: 4%;
 }
 }
+@media screen and (max-width: 767px) {
+  .card-text-description{
+    width: 100%;
+    text-align: justify;
+  }
+}
+
 @media screen and (max-width: 500px) {
   #about img {
     width:100%;
 }
 }
+
