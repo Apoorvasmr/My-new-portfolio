@@ -4,14 +4,16 @@ Common
 
 ***********************/
 html{
-  margin: auto 5%;
+  margin: auto 15%;
+  
 }
 body {
+  padding:0 5%;
   font-family: "Avenir", "sans-serif";
 }
 
 .font-primary {
-  color: #00ABAE;
+  color: lightpink;
 }
 
 .title-icon {
@@ -21,7 +23,11 @@ body {
 h2 {
   font-weight: bold;
   font-size: 23px;
+  text-shadow: 1px 1px 6px lightpink;
+  color: rgb(236, 107, 127);
+  
 }
+
 a.font-black {
   color: #000 !important;
   font-size: 15px;
@@ -32,11 +38,13 @@ a.font-black {
   font-weight: bold;
 }
 .btn-secondary {
-  background-color: #00ABAE !important;
+  background-color: lightcoral !important;
   border-color: #ffffff !important;
   padding: 10px !important;
   width: 150px;
+  box-shadow: 0px 10px 43px 0px rgb(255 30 30 / 54%);
 }
+
 
 /*******************
 
@@ -45,17 +53,17 @@ About
 ********************/
 
 #about {
-  margin: 60px auto;
+  margin: 10px auto;
   max-width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap-reverse;
+  text-align: center;
+  align-items: center;
 }
 
 #about img {
   border-radius: 50%;
-  width: 600px;
-  border: 10px solid #00ABAE;
+  width: 340px;
+  height: 290px;
+  border: 5px solid lightpink;
   margin-bottom: 10px;
 }
 
@@ -65,17 +73,17 @@ About
 
 #about .skills {
   font-size: 12px;
-  color: #00ABAE;
+  color: lightpink;
   margin-bottom: 10px;
 }
 
 #about .icons {
   margin-top: 20px;
-  font-size: 200%;
+  font-size: 100%;
 }
 .details {
-  margin-top: 10%;
-  width: 43%;
+  margin: 2% auto;
+  width: 60%;
 }
 div#what {
   margin-top: 3%;
@@ -99,7 +107,9 @@ div#what {
   justify-content: space-evenly;
 }
 .skills img {
-  padding: 4% 0%;
+  padding: 2% 0%;
+  width: 100px;
+  height: 100px;
 }
 
 /*********************
@@ -109,7 +119,7 @@ Projects
 *********************/
 
 #projects {
-  margin: 60px auto;
+  margin: 2px auto;
   width: 100%;
 }
 
@@ -124,7 +134,7 @@ Projects
 #projects .project-video {
   background-color: black;
   width: 100%;
-  height: 365px;
+  height: 100%;
 }
 
 #projects .card-title {
@@ -143,11 +153,26 @@ footer{
 }
 .icons a {
   color: black;
+  border-radius: 25px;
+  font-weight: 600;
 }
 .card-text-description{
   width: 80%;
 }
 
+
+
+@media screen and (max-width: 1245px) {
+  .ido {
+    width: 400px;
+} 
+}
+@media screen and (max-width: 1200px) {
+  .card-text-description{
+    width: 100%;
+    text-align: justify;
+  }
+}
 @media screen and (max-width: 1170px) {
   #about {
    text-align: center;
@@ -156,13 +181,6 @@ footer{
     width: 100%;
 }
 }
-
-@media screen and (max-width: 1245px) {
-  .ido {
-    width: 450px;
-} 
-}
-
 @media screen and (max-width: 1000px) {
   .ido {
     width: 100%;
@@ -172,16 +190,29 @@ footer{
   margin-bottom: 4%;
 }
 }
-@media screen and (max-width: 767px) {
-  .card-text-description{
-    width: 100%;
-    text-align: justify;
-  }
-}
+
 
 @media screen and (max-width: 500px) {
   #about img {
     width:100%;
+    height: 50%;
+}
+.skills img {
+  padding: 2% 0%;
+  width: 50px;
+  height: 50px;
 }
 }
+.container{
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  text-shadow: 1px 1px 6px lightpink;
+  color: lightpink;
+}
+.row{
+  box-shadow: 1px 1px 25px 1px lightpink;
+  margin: 3% !important;
+  background-color: transparent;
+  border-radius: 30px 0px 30px 0px;
 
+}
